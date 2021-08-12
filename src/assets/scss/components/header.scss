@@ -1,0 +1,96 @@
+@import "../utils/parameters";
+
+.header {
+    padding: 3.1rem 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // margin-bottom: 15rem;
+    }
+
+    &__links {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}
+
+.logo {
+    display: inline-block;
+}
+
+.button{
+    display: inline-block;
+    background-color: $c-secondary;
+    border-radius: 0.5rem;
+    border:0.2rem solid $c-secondary;
+    font-family: Hind Madurai;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #FAFAFA;
+    padding:1.4rem 5rem 1.4rem 5rem;
+
+    &:hover{
+        background-color: $c-text2;
+        color: $c-secondary;
+    }
+}
+
+.link-menu{
+    margin-right: 17.2rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #150101;
+
+    &.link-menu a{
+        padding:0 2rem 0 2rem;
+        opacity: 0.6;
+    }
+
+    &.link-menu a:hover{
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: $c-secondary;
+    opacity: 1;
+    }
+}
+
+
+//  @media screen and (max-width: $sm) {
+    
+// }
+
+// @media screen and (max-width: $xs) {
+
+//     .header {
+//         padding: 1rem 0;
+
+//         &__row {
+//             justify-content: center;
+//         }
+
+//         &__links {
+//             justify-content: flex-start;
+//         }
+//     }
+
+//     .logo {
+//         margin: 0 0 1.5rem;
+//     }
+
+//     .link-header {
+//         padding: 1.1rem 1.2rem;
+//         margin-left: 0;
+//     }
+
+// }

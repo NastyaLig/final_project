@@ -1,0 +1,147 @@
+@import "../utils/parameters";
+
+.first-section {
+  background-color: $c-primary;
+  overflow: hidden;
+
+  .container {
+    position: relative;
+  }
+
+  &__content {
+    max-width: 55rem;
+    padding: 20rem 0 5rem;
+    min-height: 72rem;
+    margin-top: 4rem;
+  }
+
+  &__title {
+    color: $c-text;
+    margin-bottom: 3.5rem;
+    font-family: Fredoka One;
+    font-weight: normal;
+    font-size: 5.74rem;
+    line-height: 120.5%;
+    opacity: 0.9;
+    // flex-wrap: wrap;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.9rem 2.8rem;
+
+    background: $c-primary;
+    border: 1px solid $c-primary;
+    border-radius: 1.4rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: $c-text;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0);
+      color: $c-text;
+    }
+
+    img {
+      margin-left: 1rem;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: -15rem;
+    bottom: 0;
+    max-width: 50vw;  }
+
+  .first {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1em;
+    color: $c-text;
+  }
+
+  .description {
+    font-family: Hind Madurai;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    opacity: 0.6;
+    max-width: 52.3rem;
+  }
+
+  .pink {
+    color: $c-secondary;
+  }
+
+  .button {
+    display: inline-block;
+    background-color: $c-secondary;
+    border-radius: 0.5rem;
+    border: 0.2rem solid $c-secondary;
+    font-family: Hind Madurai;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fafafa;
+    padding: 1.4rem 5rem 1.4rem 5rem;
+    margin-left: -3rem;
+    margin-top: 5rem;
+
+    &:hover {
+      background-color: $c-text2;
+      color: $c-secondary;
+    }
+  }
+}
+
+// @media screen and (max-width: $md) {
+//     .first-section {
+
+//         &__title {
+//             font-size: 5rem;
+//         }
+
+//         &__img {
+//             right: 0;
+//         }
+//     }
+// }
+
+// @media screen and (max-width: $sm) {
+//     .first-section {
+
+//         &__content {
+//             padding: 13rem 0 5rem;
+//             min-height: 50rem;
+//         }
+
+//         &__title {
+//             font-size: 4rem;
+//             max-width: 40rem;
+//         }
+//     }
+// }
+
+// @media screen and (max-width: $xs) {
+//     .first-section {
+//         &__content {
+//             min-height: auto;
+//             padding: 14rem 0 0;
+//         }
+
+//         &__title {
+//             font-size: 3rem;
+//             margin: 0 0 3rem;
+//         }
+
+//         &__link {
+//             padding: 1.2rem 1.5rem;
+//         }
+
+//         &__img {
+//             position: static;
+//             max-width: 100%;
+//         }
+//     }
+// }
