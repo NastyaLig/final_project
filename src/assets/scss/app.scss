@@ -8,7 +8,12 @@
 @import 'main/common'; // общие стили
 
 // дальше можно писать все стили сайта в этот файл, или писать их в компонентах
-
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
 .container {
     max-width: 1160px;
     padding: 0 15px;
@@ -17,3 +22,4 @@
 
 @import 'components/header';
 @import 'components/first-section';
+@import 'components/delivery';

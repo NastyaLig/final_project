@@ -1,0 +1,76 @@
+@import "../utils/parameters";
+
+.delivery_row {
+  padding: 45px 0px 0px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -15px;
+}
+
+.delivery_column {
+  width: 25%;
+  padding: 15px 15px;
+  display: flex;
+}
+
+.delivery_content {
+  max-width: 25rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #e6e0e0;
+}
+
+.delivery_content p {
+flex: 1 1 auto;
+font-family: Hind Madurai;
+font-weight: normal;
+font-size: 1.4rem;
+line-height: 1.9rem;
+text-align: center;
+color: #000000;
+opacity: 0.6;
+}
+
+.delivery_subtitle {
+padding:25px 0 10px 0 ;
+font-family: Hind Madurai;
+font-style: normal;
+font-weight: 60rem;
+font-size: 2rem;
+line-height: 2.8rem;
+color: #000000;
+}
+// @media (max-width: 770px) {
+//   .why {
+//     padding: 60px 0px;
+//   }
+
+//   .why_column {
+//     width: 50%;
+//   }
+// }
+
+// @media (max-width: 480px) {
+//   .why {
+//     padding: 20px 0px;
+//   }
+
+//   .why_column {
+//     padding: 10px 15px;
+//     width: 100%;
+//     display: block;
+//   }
+
+//   .why img {
+//     margin: 0px 0px 20px 0px;
+//   }
+
+//   .why_subtitle {
+//     font-size: 2rem;
+//   }
+
+//   .why_content p {
+//     font-size: 1.4rem;
+//   }
+// }
