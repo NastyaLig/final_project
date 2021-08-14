@@ -1,0 +1,87 @@
+@import "../utils/parameters";
+
+.products {
+  background:$c-text2;
+  overflow: hidden;
+  max-height: 54.5rem;
+  margin-bottom: 13.7rem;
+ 
+
+  .container {
+    position: relative;
+  }
+
+  &__content {
+    max-width: 44rem;
+    padding-top: 14.2rem;
+    min-height: 72rem;
+    margin-top: 4rem;
+  }
+
+  &__title {
+    color: $c-text;
+    font-family: Hind Madurai;
+    font-size: 4.42rem;
+    font-weight: 600;
+    max-width: 32rem;
+    display: block;
+    margin-bottom: 1.6rem;
+  }
+
+  &__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.9rem 2.8rem;
+
+    background: $c-primary;
+    border: 1px solid $c-primary;
+    border-radius: 1.4rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: $c-text;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0);
+      color: $c-text;
+    }
+
+    img {
+      margin-left: 1rem;
+      z-index: 0;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 0rem;
+    bottom: 15rem;
+    max-width: 45vw; 
+     }
+
+  .description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: Roboto;
+    color: rgba(21, 1, 1, 0.6);
+    margin-bottom: 2.2rem;
+
+  .button {
+    display: inline-block;
+    background-color: $c-secondary;
+    border-radius: 0.5rem;
+    border: 0.2rem solid $c-secondary;
+    font-family: Hind Madurai;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #fafafa;
+    padding: 1.4rem 5rem 1.4rem 5rem;
+    margin-top: 5rem;
+
+    &:hover {
+      background-color: $c-text2;
+      color: $c-secondary;
+    }
+  }
+  }
+}

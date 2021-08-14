@@ -9,7 +9,7 @@
   }
 
   &__content {
-    max-width: 55rem;
+    max-width: 67rem;
     padding: 20rem 0 5rem;
     min-height: 72rem;
     margin-top: 4rem;
@@ -47,6 +47,7 @@
 
     img {
       margin-left: 1rem;
+      z-index: 0;
     }
   }
 
@@ -91,7 +92,6 @@
     font-size: 1.6rem;
     color: #fafafa;
     padding: 1.4rem 5rem 1.4rem 5rem;
-    margin-left: -3rem;
     margin-top: 5rem;
 
     &:hover {

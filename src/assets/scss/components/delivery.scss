@@ -1,24 +1,30 @@
 @import "../utils/parameters";
 
 .delivery_row {
-  padding: 45px 0px 0px 0px;
   display: flex;
   flex-wrap: wrap;
-  margin: 0px -15px;
+  margin: 100px -15px;
 }
 
 .delivery_column {
   width: 25%;
-  padding: 15px 15px;
+  padding: 15px 20px;
   display: flex;
+  
 }
 
 .delivery_content {
   max-width: 25rem;
   padding: 2.5rem;
   text-align: center;
-  border-radius: 5px;
-  border: 1px solid #e6e0e0;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+  border-radius: 7px;
+
+  &:hover{
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+  }
 }
 
 .delivery_content p {

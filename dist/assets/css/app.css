@@ -318,16 +318,16 @@ button {
     background-color: #fafafa;
     color: #d23166; }
 
-.link-menu {
+.nav {
   margin-right: 17.2rem;
   display: inline-block;
   font-size: 1.4rem;
   line-height: 1.6rem;
   color: #150101; }
-  .link-menu.link-menu a {
+  .nav.nav a {
     padding: 0 2rem 0 2rem;
     opacity: 0.6; }
-  .link-menu.link-menu a:hover {
+  .nav.nav a:hover {
     font-weight: bold;
     font-size: 1.5rem;
     line-height: 1.8rem;
@@ -340,7 +340,7 @@ button {
   .first-section .container {
     position: relative; }
   .first-section__content {
-    max-width: 55rem;
+    max-width: 67rem;
     padding: 20rem 0 5rem;
     min-height: 72rem;
     margin-top: 4rem; }
@@ -368,7 +368,8 @@ button {
       background-color: rgba(0, 0, 0, 0);
       color: #0f0101; }
     .first-section__link img {
-      margin-left: 1rem; }
+      margin-left: 1rem;
+      z-index: 0; }
   .first-section__img {
     position: absolute;
     right: -15rem;
@@ -386,6 +387,8 @@ button {
     line-height: 2.7rem;
     opacity: 0.6;
     max-width: 52.3rem; }
+  .first-section .main-title {
+    display: block; }
   .first-section .pink {
     color: #d23166; }
   .first-section .button {
@@ -398,31 +401,33 @@ button {
     font-size: 1.6rem;
     color: #fafafa;
     padding: 1.4rem 5rem 1.4rem 5rem;
-    margin-left: -3rem;
     margin-top: 5rem; }
     .first-section .button:hover {
       background-color: #fafafa;
       color: #d23166; }
 
-.why_row {
-  padding: 45px 0px 0px 0px;
+.delivery_row {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px -15px; }
+  margin: 100px -15px; }
 
-.why_column {
+.delivery_column {
   width: 25%;
-  padding: 15px 15px;
+  padding: 15px 20px;
   display: flex; }
 
-.why_content {
+.delivery_content {
   max-width: 25rem;
   padding: 2.5rem;
   text-align: center;
-  border-radius: 5px;
-  border: 1px solid #e6e0e0; }
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  box-sizing: border-box;
+  border-radius: 7px; }
+  .delivery_content:hover {
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03); }
 
-.why_content p {
+.delivery_content p {
   flex: 1 1 auto;
   font-family: Hind Madurai;
   font-weight: normal;
@@ -432,10 +437,137 @@ button {
   color: #000000;
   opacity: 0.6; }
 
-.why_subtitle {
+.delivery_subtitle {
+  padding: 25px 0 10px 0;
   font-family: Hind Madurai;
   font-style: normal;
   font-weight: 60rem;
   font-size: 2rem;
   line-height: 2.8rem;
   color: #000000; }
+
+.details {
+  background: rgba(242, 206, 218, 0.3);
+  overflow: hidden;
+  max-height: 54.5rem;
+  margin-bottom: 13.7rem; }
+  .details .container {
+    position: relative; }
+  .details__content {
+    max-width: 44rem;
+    padding-top: 14.2rem;
+    min-height: 72rem;
+    margin-top: 4rem; }
+  .details__title {
+    color: #0f0101;
+    font-family: Hind Madurai;
+    font-size: 4.42rem;
+    font-weight: 600;
+    max-width: 32rem;
+    display: block;
+    margin-bottom: 1.6rem; }
+  .details__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.9rem 2.8rem;
+    background: #f2ceda;
+    border: 1px solid #f2ceda;
+    border-radius: 1.4rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #0f0101; }
+    .details__link:hover {
+      background-color: rgba(0, 0, 0, 0);
+      color: #0f0101; }
+    .details__link img {
+      margin-left: 1rem;
+      z-index: 0; }
+  .details__img {
+    position: absolute;
+    right: 0rem;
+    bottom: 15rem;
+    max-width: 45vw; }
+  .details .description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: Roboto;
+    color: rgba(21, 1, 1, 0.6);
+    margin-bottom: 2.2rem; }
+    .details .description .button {
+      display: inline-block;
+      background-color: #d23166;
+      border-radius: 0.5rem;
+      border: 0.2rem solid #d23166;
+      font-family: Hind Madurai;
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: #fafafa;
+      padding: 1.4rem 5rem 1.4rem 5rem;
+      margin-top: 5rem; }
+      .details .description .button:hover {
+        background-color: #fafafa;
+        color: #d23166; }
+
+.products {
+  background: #fafafa;
+  overflow: hidden;
+  max-height: 54.5rem;
+  margin-bottom: 13.7rem; }
+  .products .container {
+    position: relative; }
+  .products__content {
+    max-width: 44rem;
+    padding-top: 14.2rem;
+    min-height: 72rem;
+    margin-top: 4rem; }
+  .products__title {
+    color: #0f0101;
+    font-family: Hind Madurai;
+    font-size: 4.42rem;
+    font-weight: 600;
+    max-width: 32rem;
+    display: block;
+    margin-bottom: 1.6rem; }
+  .products__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.9rem 2.8rem;
+    background: #f2ceda;
+    border: 1px solid #f2ceda;
+    border-radius: 1.4rem;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #0f0101; }
+    .products__link:hover {
+      background-color: rgba(0, 0, 0, 0);
+      color: #0f0101; }
+    .products__link img {
+      margin-left: 1rem;
+      z-index: 0; }
+  .products__img {
+    position: absolute;
+    right: 0rem;
+    bottom: 15rem;
+    max-width: 45vw; }
+  .products .description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: Roboto;
+    color: rgba(21, 1, 1, 0.6);
+    margin-bottom: 2.2rem; }
+    .products .description .button {
+      display: inline-block;
+      background-color: #d23166;
+      border-radius: 0.5rem;
+      border: 0.2rem solid #d23166;
+      font-family: Hind Madurai;
+      font-weight: bold;
+      font-size: 1.6rem;
+      color: #fafafa;
+      padding: 1.4rem 5rem 1.4rem 5rem;
+      margin-top: 5rem; }
+      .products .description .button:hover {
+        background-color: #fafafa;
+        color: #d23166; }
