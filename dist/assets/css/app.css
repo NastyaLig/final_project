@@ -408,13 +408,15 @@ button {
 
 .delivery_row {
   display: flex;
-  flex-wrap: wrap;
-  margin: 100px -15px; }
+  flex-wrap: wrap; }
 
 .delivery_column {
   width: 25%;
   padding: 15px 20px;
   display: flex; }
+
+.delivery {
+  padding: 100px 15px 50px 15px; }
 
 .delivery_content {
   max-width: 25rem;
@@ -450,14 +452,14 @@ button {
   background: rgba(242, 206, 218, 0.3);
   overflow: hidden;
   max-height: 54.5rem;
-  margin-bottom: 13.7rem; }
+  padding-top: 14rem;
+  padding-bottom: 13.7rem;
+  margin-top: 5rem; }
   .details .container {
     position: relative; }
   .details__content {
     max-width: 44rem;
-    padding-top: 14.2rem;
-    min-height: 72rem;
-    margin-top: 4rem; }
+    min-height: 72rem; }
   .details__title {
     color: #0f0101;
     font-family: Hind Madurai;
@@ -486,8 +488,8 @@ button {
   .details__img {
     position: absolute;
     right: 0rem;
-    bottom: 15rem;
-    max-width: 45vw; }
+    bottom: 35rem;
+    max-width: 40vw; }
   .details .description {
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -509,11 +511,58 @@ button {
         background-color: #fafafa;
         color: #d23166; }
 
+.menu {
+  padding: 3.1rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+  .menu__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 110.0rem; }
+  .menu__links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+
+.nav {
+  margin-right: 17.2rem;
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #150101;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500; }
+  .nav.nav a {
+    padding: 0 2rem 0 2rem;
+    opacity: 0.6; }
+  .nav.nav a:hover {
+    color: #150101;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    border-bottom: solid 5px #d23166;
+    opacity: 1; }
+
 .products {
-  background: #fafafa;
   overflow: hidden;
   max-height: 54.5rem;
-  margin-bottom: 13.7rem; }
+  margin-bottom: 13.7rem;
+  padding-top: 13.7rem; }
+  .products__title {
+    font-family: Hind Madurai;
+    font-weight: 600;
+    text-align: center;
+    font-size: 4.42rem;
+    line-height: 6.1rem;
+    color: #0f0101;
+    padding-bottom: 6.4rem; }
   .products .container {
     position: relative; }
   .products__content {
@@ -521,7 +570,7 @@ button {
     padding-top: 14.2rem;
     min-height: 72rem;
     margin-top: 4rem; }
-  .products__title {
+  .products__subtitle {
     color: #0f0101;
     font-family: Hind Madurai;
     font-size: 4.42rem;

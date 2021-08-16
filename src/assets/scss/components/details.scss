@@ -4,7 +4,9 @@
   background:rgba(242, 206, 218, 0.3);
   overflow: hidden;
   max-height: 54.5rem;
-  margin-bottom: 13.7rem;
+  padding-top: 14rem;
+  padding-bottom: 13.7rem;
+  margin-top: 5rem;
  
 
   .container {
@@ -12,10 +14,8 @@
   }
 
   &__content {
-    max-width: 44rem;
-    padding-top: 14.2rem;
+    max-width: 44rem;  
     min-height: 72rem;
-    margin-top: 4rem;
   }
 
   &__title {
@@ -55,8 +55,8 @@
   &__img {
     position: absolute;
     right: 0rem;
-    bottom: 15rem;
-    max-width: 45vw; 
+    bottom: 35rem;
+    max-width: 40vw; 
      }
 
   .description {
