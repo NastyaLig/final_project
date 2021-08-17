@@ -1,148 +1,179 @@
 @import "../utils/parameters";
 
-@import "../utils/parameters";
-
 .menu {
-    padding: 3.1rem 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
+  padding: 3.1rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 
-    &__row {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        max-width: 110.0rem;
-    }
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 110rem;
+  }
 
-    &__links {
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-    }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
-.nav{
-    margin-right: 17.2rem;
-    display: inline-block;
-    font-size: 1.8rem;
-    line-height: 2.1rem;
-    color: #150101;
-    text-align: center ;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
+.nav_categ {
+  margin-right: 17.2rem;
+  display: inline-block;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #150101;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: 5rem;
 
-    &.nav a{
-        padding:0 2rem 0 2rem;
-        opacity: 0.6;
-    }
+  &.nav_categ a {
+    padding: 0 2rem 0 2rem;
+    opacity: 0.6;
+  }
 
-    &.nav a:hover{
+  &.nav_categ a:hover {
     color: #150101;
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 2.1rem;
     border-bottom: solid 5px $c-secondary;
-    // text-decoration: underline;
     opacity: 1;
-    }
+  }
 }
 
 .products {
   overflow: hidden;
-  max-height: 54.5rem;
-  margin-bottom: 13.7rem;
-  padding-top: 13.7rem;
+  padding-top: 19rem;
  
-  &__title{
-    font-family: Hind Madurai;
-    font-weight: 600;
-    text-align: center;
-    font-size: 4.42rem;
-    line-height: 6.1rem;
-    color: $c-text;
-    padding-bottom: 6.4rem;
-  }
 
   .container {
     position: relative;
   }
 
-  &__content {
-    max-width: 44rem;
-    padding-top: 14.2rem;
-    min-height: 72rem;
-    margin-top: 4rem;
-  }
-
-  &__subtitle {
+  &__title {
     color: $c-text;
     font-family: Hind Madurai;
     font-size: 4.42rem;
     font-weight: 600;
-    max-width: 32rem;
     display: block;
-    margin-bottom: 1.6rem;
+    margin-bottom: 6rem;
+    text-align: center;
+  }
   }
 
-  &__link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.9rem 2.8rem;
+.prod{
+    &__wrap{
+    display: flex;
 
-    background: $c-primary;
-    border: 1px solid $c-primary;
-    border-radius: 1.4rem;
-    font-weight: bold;
-    font-size: 1.8rem;
-    color: $c-text;
+    }
+    &__revers{
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
 
-    &:hover {
-      background-color: rgba(0, 0, 0, 0);
-      color: $c-text;
     }
 
-    img {
-      margin-left: 1rem;
-      z-index: 0;
+    &__revers-img-wrap{
+      margin-left:8.5rem;
+      margin-bottom: 3rem;
     }
-  }
 
-  &__img {
-    position: absolute;
-    right: 0rem;
-    bottom: 15rem;
-    max-width: 45vw; 
-     }
+    &__img-wrap{
+      display: flex;
+      max-width: 58rem;
+      margin-right: 8.5rem;
+      margin-bottom: 3rem;
+    }
+    
 
-  .description {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    font-family: Roboto;
-    color: rgba(21, 1, 1, 0.6);
-    margin-bottom: 2.2rem;
+    &__img{
+      max-width: 100%;
+    }
 
-  .button {
-    display: inline-block;
-    background-color: $c-secondary;
-    border-radius: 0.5rem;
-    border: 0.2rem solid $c-secondary;
+
+    &__info-wrap{
+      display: flex;
+      flex-direction: column;
+      max-width: 45.4rem;
+      padding-top: 6rem;
+    }
+
+    &__info-wrap-revers{
+      display: flex;
+      flex-direction: column;
+      max-width: 45.4rem;
+      padding-top: 6rem;
+      align-items: flex-end;
+    }
+
+
+    &__title{
     font-family: Hind Madurai;
     font-weight: bold;
-    font-size: 1.6rem;
-    color: #fafafa;
-    padding: 1.4rem 5rem 1.4rem 5rem;
-    margin-top: 5rem;
-
-    &:hover {
-      background-color: $c-text2;
-      color: $c-secondary;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    color: #000000;
+    padding-bottom: 1.1rem;
     }
-  }
-  }
+
+    &__description{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #000000;
+    opacity: 0.7;
+    padding-bottom: 2.8rem;
+    }
+
+    &__description-revert{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #000000;
+    opacity: 0.7;
+    padding-bottom: 2.8rem;
+    text-align: right;
+    }
+
+
+    &__sale{
+    font-family: Hind Madurai;
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 3.6rem;
+    color: #000000;
+    }
+    .old__sale{
+    font-size: 2rem;
+    line-height: 2.8rem;
+    text-decoration-line: line-through;
+    opacity: 0.7;
+    }
+
+    &__button{
+      display: block;
+      background-color: $c-secondary;
+      border-radius: 0.5rem;
+      border: 0.2rem solid $c-secondary;
+      font-family: Hind Madurai;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #fafafa;
+      padding: 1.4rem 5rem 1.4rem 5rem;
+      margin-top: 1.6rem;
+      max-width: 16.5rem;
+      max-height: 4.9rem;
+
+      &:hover {
+        background-color: $c-text2;
+        color: $c-secondary;
+      }
+    }
 }

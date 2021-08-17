@@ -523,13 +523,13 @@ button {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 110.0rem; }
-  .menu__links {
+    max-width: 110rem; }
+  .menu__link {
     display: flex;
     align-items: center;
     justify-content: flex-end; }
 
-.nav {
+.nav_categ {
   margin-right: 17.2rem;
   display: inline-block;
   font-size: 1.8rem;
@@ -538,11 +538,12 @@ button {
   text-align: center;
   font-family: Roboto;
   font-style: normal;
-  font-weight: 500; }
-  .nav.nav a {
+  font-weight: 500;
+  margin-bottom: 5rem; }
+  .nav_categ.nav_categ a {
     padding: 0 2rem 0 2rem;
     opacity: 0.6; }
-  .nav.nav a:hover {
+  .nav_categ.nav_categ a:hover {
     color: #150101;
     font-weight: 500;
     font-size: 1.8rem;
@@ -552,71 +553,205 @@ button {
 
 .products {
   overflow: hidden;
-  max-height: 54.5rem;
-  margin-bottom: 13.7rem;
-  padding-top: 13.7rem; }
-  .products__title {
-    font-family: Hind Madurai;
-    font-weight: 600;
-    text-align: center;
-    font-size: 4.42rem;
-    line-height: 6.1rem;
-    color: #0f0101;
-    padding-bottom: 6.4rem; }
+  padding-top: 19rem; }
   .products .container {
     position: relative; }
-  .products__content {
-    max-width: 44rem;
-    padding-top: 14.2rem;
-    min-height: 72rem;
-    margin-top: 4rem; }
-  .products__subtitle {
+  .products__title {
     color: #0f0101;
     font-family: Hind Madurai;
     font-size: 4.42rem;
     font-weight: 600;
-    max-width: 32rem;
     display: block;
-    margin-bottom: 1.6rem; }
-  .products__link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.9rem 2.8rem;
-    background: #f2ceda;
-    border: 1px solid #f2ceda;
-    border-radius: 1.4rem;
-    font-weight: bold;
+    margin-bottom: 6rem;
+    text-align: center; }
+
+.prod__wrap {
+  display: flex; }
+
+.prod__revers {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center; }
+
+.prod__revers-img-wrap {
+  margin-left: 8.5rem;
+  margin-bottom: 3rem; }
+
+.prod__img-wrap {
+  display: flex;
+  max-width: 58rem;
+  margin-right: 8.5rem;
+  margin-bottom: 3rem; }
+
+.prod__img {
+  max-width: 100%; }
+
+.prod__info-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 45.4rem;
+  padding-top: 6rem; }
+
+.prod__info-wrap-revers {
+  display: flex;
+  flex-direction: column;
+  max-width: 45.4rem;
+  padding-top: 6rem;
+  align-items: flex-end; }
+
+.prod__title {
+  font-family: Hind Madurai;
+  font-weight: bold;
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  color: #000000;
+  padding-bottom: 1.1rem; }
+
+.prod__description {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #000000;
+  opacity: 0.7;
+  padding-bottom: 2.8rem; }
+
+.prod__description-revert {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #000000;
+  opacity: 0.7;
+  padding-bottom: 2.8rem;
+  text-align: right; }
+
+.prod__sale {
+  font-family: Hind Madurai;
+  font-weight: 500;
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  color: #000000; }
+
+.prod .old__sale {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-decoration-line: line-through;
+  opacity: 0.7; }
+
+.prod__button {
+  display: block;
+  background-color: #d23166;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #d23166;
+  font-family: Hind Madurai;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #fafafa;
+  padding: 1.4rem 5rem 1.4rem 5rem;
+  margin-top: 1.6rem;
+  max-width: 16.5rem;
+  max-height: 4.9rem; }
+  .prod__button:hover {
+    background-color: #fafafa;
+    color: #d23166; }
+
+.comments__wrap {
+  margin-top: 11.2rem;
+  margin-bottom: 14.9rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.comments__info-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 45.4rem; }
+
+.comments__main-wrap {
+  max-width: 26rem;
+  max-height: 5.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem; }
+
+.comments__img-main {
+  max-width: 100%; }
+
+.comments__title {
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  color: #000000;
+  padding-bottom: 0.5rem; }
+
+.comments__location {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #000000;
+  opacity: 0.7; }
+
+.comments__text-wrap {
+  padding-bottom: 5.6rem;
+  display: flex;
+  align-items: flex-start; }
+
+.comments__text {
+  max-width: 32.2rem;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #000000;
+  opacity: 0.7; }
+
+.comments__slider {
+  display: flex;
+  max-width: 25rem;
+  justify-content: space-between;
+  align-items: center; }
+
+.comments__img {
+  display: flex;
+  max-width: 100%; }
+
+.order {
+  background: rgba(242, 206, 218, 0.3); }
+  .order__wrap {
+    display: flex;
+    max-height: 64rem; }
+  .order__phone-wrap {
+    display: block;
+    position: relative;
+    max-width: 30vw;
+    height: auto;
+    margin-right: 13.4rem;
+    padding-top: 6rem; }
+  .order__info-wrap {
+    display: flex;
+    padding-top: 12.5rem;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start; }
+  .order__title {
+    font-weight: 500;
+    font-size: 4.4rem;
+    line-height: 5.2rem;
+    color: #000000;
+    padding-bottom: 2rem; }
+  .order__text {
     font-size: 1.8rem;
-    color: #0f0101; }
-    .products__link:hover {
-      background-color: rgba(0, 0, 0, 0);
-      color: #0f0101; }
-    .products__link img {
-      margin-left: 1rem;
-      z-index: 0; }
-  .products__img {
-    position: absolute;
-    right: 0rem;
-    bottom: 15rem;
-    max-width: 45vw; }
-  .products .description {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    font-family: Roboto;
-    color: rgba(21, 1, 1, 0.6);
-    margin-bottom: 2.2rem; }
-    .products .description .button {
-      display: inline-block;
-      background-color: #d23166;
-      border-radius: 0.5rem;
-      border: 0.2rem solid #d23166;
-      font-family: Hind Madurai;
-      font-weight: bold;
-      font-size: 1.6rem;
-      color: #fafafa;
-      padding: 1.4rem 5rem 1.4rem 5rem;
-      margin-top: 5rem; }
-      .products .description .button:hover {
-        background-color: #fafafa;
-        color: #d23166; }
+    line-height: 2.1rem;
+    letter-spacing: 0.01em;
+    color: #0F0101;
+    opacity: 0.7;
+    max-width: 60.7rem; }
+  .order__steps {
+    padding-top: 3.1rem;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    color: #000000; }
+  .order__social-img {
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; }
+    .order__social-img :first-child {
+      padding-right: 2rem; }
