@@ -762,7 +762,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 12.9rem; }
+  margin-bottom: 13rem; }
 
 .question__title {
   max-width: 52.2rem;
@@ -774,16 +774,84 @@ button {
   padding-bottom: 2.8rem; }
 
 .question__form {
-  max-width: 50.3rem;
   max-height: 7.4rem;
-  display: flex;
-  border-radius: 0.5rem; }
+  display: flex; }
 
-.question__field::placeholder {
-  padding: 3rem 3rem 3rem 35.2rem;
-  font-size: 1.4rem;
-  line-height: 1.6rem;
-  color: #0F0000;
-  opacity: 0.6; }
-  .question__field::placeholder:focus {
-    border-color: #d23166; }
+.question input {
+  width: 55rem;
+  height: 7.4rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 1.5rem;
+  background: #fafafa;
+  border-radius: 5px; }
+
+.question__field {
+  width: 50rem;
+  height: 7.4rem; }
+  .question__field::placeholder {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: rgba(15, 1, 1, 0.6); }
+
+.question__button {
+  display: block;
+  background-color: #d23166;
+  border-radius: 0.5rem;
+  border: 0.2rem solid #d23166;
+  font-weight: 500;
+  font-size: 2rem;
+  color: #fafafa;
+  padding: 2rem 4.5rem 3rem 4.5rem;
+  max-width: 13.4rem;
+  max-height: 7.4rem; }
+  .question__button:hover {
+    background-color: #fafafa;
+    color: #d23166; }
+
+.footer__main {
+  background-color: #0A0808;
+  display: flex;
+  justify-content: flex-start; }
+
+.footer__social {
+  padding-top: 7rem;
+  padding-left: 24.5rem;
+  padding-bottom: 11.4rem; }
+
+.footer__text {
+  padding-top: 1rem;
+  max-width: 20.7rem;
+  max-height: 4.7rem;
+  font-size: 1.2rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  opacity: 0.7; }
+
+.footer__soc {
+  padding-top: 2.5rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: #FFFFFF; }
+
+.footer__icon {
+  padding-top: 0.8rem;
+  display: flex;
+  max-width: 9rem;
+  justify-content: space-between; }
+
+.footer__menu {
+  display: block;
+  margin-left: 3.7rem;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: red; }
+  .footer__menu__menu a {
+    display: block;
+    opacity: 0.7; }
+  .footer__menu__menu a:hover {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #ffff; }
