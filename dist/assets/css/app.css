@@ -773,7 +773,7 @@ button {
   color: #000000;
   padding-bottom: 2.8rem; }
 
-.question__form {
+.question form {
   max-height: 7.4rem;
   display: flex; }
 
@@ -794,7 +794,7 @@ button {
     line-height: 1.6rem;
     color: rgba(15, 1, 1, 0.6); }
 
-.question__button {
+.question button {
   display: block;
   background-color: #d23166;
   border-radius: 0.5rem;
@@ -805,7 +805,7 @@ button {
   padding: 2rem 4.5rem 3rem 4.5rem;
   max-width: 13.4rem;
   max-height: 7.4rem; }
-  .question__button:hover {
+  .question button:hover {
     background-color: #fafafa;
     color: #d23166; }
 

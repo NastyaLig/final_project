@@ -21,7 +21,7 @@
         padding-bottom: 2.8rem;
     }
 
-    &__form{
+    form{
         max-height: 7.4rem;
         display: flex;
        
@@ -48,7 +48,7 @@
         }
     }
 
-    &__button{
+    button{
         display: block;
         background-color: $c-secondary;
         border-radius: 0.5rem;
