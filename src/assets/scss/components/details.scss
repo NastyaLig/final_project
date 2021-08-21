@@ -28,45 +28,12 @@
     margin-bottom: 1.6rem;
   }
 
-  &__link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.9rem 2.8rem;
-
-    background: $c-primary;
-    border: 1px solid $c-primary;
-    border-radius: 1.4rem;
-    font-weight: bold;
-    font-size: 1.8rem;
-    color: $c-text;
-
-    &:hover {
-      background-color: rgba(0, 0, 0, 0);
-      color: $c-text;
-    }
-
     img {
       margin-left: 1rem;
       z-index: 0;
     }
-  }
 
-  &__img {
-    position: absolute;
-    right: 0rem;
-    bottom: 35rem;
-    max-width: 40vw; 
-     }
-
-  .description {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    font-family: Roboto;
-    color: rgba(21, 1, 1, 0.6);
-    margin-bottom: 2.2rem;
-
-  .button {
+    &__button {
     display: inline-block;
     background-color: $c-secondary;
     border-radius: 0.5rem;
@@ -83,5 +50,90 @@
       color: $c-secondary;
     }
   }
+  
+
+  &__img {
+    position: absolute;
+    right: 0rem;
+    bottom: 35rem;
+    max-width: 40vw; 
+     }
+
+  .description {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    font-family: Roboto;
+    color: rgba(21, 1, 1, 0.6);
+    margin-bottom: 2.2rem;
   }
+
+}
+
+// 1024px;
+@media screen and (max-width: $md) {
+    .details {
+
+        &__title {
+            font-size: 5rem;
+        }
+
+        &__img {
+            right: 0;
+        }
+    }
+}
+
+// 768px;
+@media screen and (max-width: $sm) {
+    .details {
+
+        &__content {
+            min-height: auto;
+            padding: 14rem 0 0;
+            text-align: center;
+        }
+
+        &__title {
+            font-size: 4rem;
+            margin: 0 0 3rem;
+        }
+
+        .description{
+          max-width: 90vw;
+        }
+
+        // &__link {
+        //     padding: 1.2rem 1.5rem;
+        // }
+
+        &__img {
+            position: static;
+            max-width: 100%;
+        }
+    }
+}
+
+//576px;
+
+@media screen and (max-width: $xs) {
+    .details {
+        &__content {
+            min-height: auto;
+            padding: 14rem 0 0;
+        }
+
+        &__title {
+            font-size: 3rem;
+            margin: 0 0 3rem;
+        }
+
+        // &__link {
+        //     padding: 1.2rem 1.5rem;
+        // }
+
+        &__img {
+            position: static;
+            max-width: 100%;
+        }
+    }
 }

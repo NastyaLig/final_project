@@ -27,7 +27,40 @@
     display: inline-block;
 }
 
-.button{
+.nav{
+    margin-right: 17.2rem;
+    display: inline-block;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #150101;
+    max-width: 70vw;
+
+    &.nav a{
+        padding:0 2rem 0 2rem;
+        opacity: 0.6;
+    }
+
+    &.nav a:hover{
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: $c-secondary;
+    opacity: 1;
+    }
+
+    ul{
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px;
+    }
+
+    li{
+    display: inline;
+    float: left;
+    }
+
+    .button{
     display: inline-block;
     background-color: $c-secondary;
     border-radius: 0.5rem;
@@ -43,54 +76,47 @@
         color: $c-secondary;
     }
 }
-
-.nav{
-    margin-right: 17.2rem;
-    display: inline-block;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    color: #150101;
-
-    &.nav a{
-        padding:0 2rem 0 2rem;
-        opacity: 0.6;
-    }
-
-    &.nav a:hover{
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
-    color: $c-secondary;
-    opacity: 1;
-    }
 }
 
 
-//  @media screen and (max-width: $sm) {
-    
-// }
+ @media screen and (max-width: $sm) {
+     ul{
+         display: none;
+     }
+     nav a{  
+        content:"";  
+        background: url('nav-icon.svg') no-repeat;  
+        width: 30px;  
+        height: 30px;  
+        display: inline-block;  
+        position: absolute;  
+        // rightright: 15px;  
+        top: 10px;  
+    }  
 
-// @media screen and (max-width: $xs) {
+}
 
-//     .header {
-//         padding: 1rem 0;
+@media screen and (max-width: $xs) {
 
-//         &__row {
-//             justify-content: center;
-//         }
+    .header {
+        padding: 1rem 0;
 
-//         &__links {
-//             justify-content: flex-start;
-//         }
-//     }
+        &__row {
+            justify-content: center;
+        }
 
-//     .logo {
-//         margin: 0 0 1.5rem;
-//     }
+        &__links {
+            justify-content: flex-start;
+        }
+    }
 
-//     .link-header {
-//         padding: 1.1rem 1.2rem;
-//         margin-left: 0;
-//     }
+    .logo {
+        margin: 0 0 1.5rem;
+    }
 
-// }
+    .link-header {
+        padding: 1.1rem 1.2rem;
+        margin-left: 0;
+    }
+
+}

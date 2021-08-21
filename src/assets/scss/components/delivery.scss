@@ -50,36 +50,39 @@ font-size: 2rem;
 line-height: 2.8rem;
 color: #000000;
 }
-// @media (max-width: 770px) {
-//   .why {
-//     padding: 60px 0px;
-//   }
 
-//   .why_column {
-//     width: 50%;
-//   }
-// }
 
-// @media (max-width: 480px) {
-//   .why {
-//     padding: 20px 0px;
-//   }
 
-//   .why_column {
-//     padding: 10px 15px;
-//     width: 100%;
-//     display: block;
-//   }
+@media (max-width: $sm) {
+  .delivery {
+    padding: 60px 0px;
+  }
 
-//   .why img {
-//     margin: 0px 0px 20px 0px;
-//   }
+  .delivery_column {
+    width: 50%;
+  }
+}
 
-//   .why_subtitle {
-//     font-size: 2rem;
-//   }
+@media (max-width: $xs) {
+  .delivery {
+    padding: 20px 0px;
+  }
 
-//   .why_content p {
-//     font-size: 1.4rem;
-//   }
-// }
+  .delivery_column {
+    padding: 10px 120px;
+    width: 100%;
+    display: block;
+  }
+
+  .delivery img {
+    margin: 0px 0px 20px 0px;
+  }
+
+  .delivery_subtitle {
+    font-size: 2rem;
+  }
+
+  .delivery_content p {
+    font-size: 1.4rem;
+  }
+}

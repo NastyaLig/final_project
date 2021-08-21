@@ -304,26 +304,13 @@ button {
 .logo {
   display: inline-block; }
 
-.button {
-  display: inline-block;
-  background-color: #d23166;
-  border-radius: 0.5rem;
-  border: 0.2rem solid #d23166;
-  font-family: Hind Madurai;
-  font-weight: bold;
-  font-size: 1.6rem;
-  color: #FAFAFA;
-  padding: 1.4rem 5rem 1.4rem 5rem; }
-  .button:hover {
-    background-color: #fafafa;
-    color: #d23166; }
-
 .nav {
   margin-right: 17.2rem;
   display: inline-block;
   font-size: 1.4rem;
   line-height: 1.6rem;
-  color: #150101; }
+  color: #150101;
+  max-width: 70vw; }
   .nav.nav a {
     padding: 0 2rem 0 2rem;
     opacity: 0.6; }
@@ -333,6 +320,52 @@ button {
     line-height: 1.8rem;
     color: #d23166;
     opacity: 1; }
+  .nav ul {
+    padding: 0;
+    margin: 0 auto;
+    width: 600px;
+    height: 40px; }
+  .nav li {
+    display: inline;
+    float: left; }
+  .nav .button {
+    display: inline-block;
+    background-color: #d23166;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #d23166;
+    font-family: Hind Madurai;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #FAFAFA;
+    padding: 1.4rem 5rem 1.4rem 5rem; }
+    .nav .button:hover {
+      background-color: #fafafa;
+      color: #d23166; }
+
+@media screen and (max-width: 768px) {
+  ul {
+    display: none; }
+  nav a {
+    content: "";
+    background: url("nav-icon.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    top: 10px; } }
+
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 1rem 0; }
+    .header__row {
+      justify-content: center; }
+    .header__links {
+      justify-content: flex-start; }
+  .logo {
+    margin: 0 0 1.5rem; }
+  .link-header {
+    padding: 1.1rem 1.2rem;
+    margin-left: 0; } }
 
 .first-section {
   background: rgba(242, 206, 218, 0.3);
@@ -406,6 +439,41 @@ button {
       background-color: #fafafa;
       color: #d23166; }
 
+@media screen and (max-width: 1024px) {
+  .first-section__title {
+    font-size: 5rem; }
+  .first-section__img {
+    right: 0; } }
+
+@media screen and (max-width: 768px) {
+  .first-section__content {
+    min-height: auto;
+    padding: 14rem 0 0;
+    text-align: center; }
+  .first-section__title {
+    font-size: 4rem;
+    margin: 0 0 3rem; }
+  .first-section .description {
+    max-width: 90vw; }
+  .first-section__link {
+    padding: 1.2rem 1.5rem; }
+  .first-section__img {
+    position: static;
+    max-width: 100%; } }
+
+@media screen and (max-width: 576px) {
+  .first-section__content {
+    min-height: auto;
+    padding: 14rem 0 0; }
+  .first-section__title {
+    font-size: 3rem;
+    margin: 0 0 3rem; }
+  .first-section__link {
+    padding: 1.2rem 1.5rem; }
+  .first-section__img {
+    position: static;
+    max-width: 100%; } }
+
 .delivery_row {
   display: flex;
   flex-wrap: wrap; }
@@ -448,6 +516,26 @@ button {
   line-height: 2.8rem;
   color: #000000; }
 
+@media (max-width: 768px) {
+  .delivery {
+    padding: 60px 0px; }
+  .delivery_column {
+    width: 50%; } }
+
+@media (max-width: 576px) {
+  .delivery {
+    padding: 20px 0px; }
+  .delivery_column {
+    padding: 10px 120px;
+    width: 100%;
+    display: block; }
+  .delivery img {
+    margin: 0px 0px 20px 0px; }
+  .delivery_subtitle {
+    font-size: 2rem; }
+  .delivery_content p {
+    font-size: 1.4rem; } }
+
 .details {
   background: rgba(242, 206, 218, 0.3);
   overflow: hidden;
@@ -468,23 +556,23 @@ button {
     max-width: 32rem;
     display: block;
     margin-bottom: 1.6rem; }
-  .details__link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.9rem 2.8rem;
-    background: #f2ceda;
-    border: 1px solid #f2ceda;
-    border-radius: 1.4rem;
+  .details img {
+    margin-left: 1rem;
+    z-index: 0; }
+  .details__button {
+    display: inline-block;
+    background-color: #d23166;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #d23166;
+    font-family: Hind Madurai;
     font-weight: bold;
-    font-size: 1.8rem;
-    color: #0f0101; }
-    .details__link:hover {
-      background-color: rgba(0, 0, 0, 0);
-      color: #0f0101; }
-    .details__link img {
-      margin-left: 1rem;
-      z-index: 0; }
+    font-size: 1.6rem;
+    color: #fafafa;
+    padding: 1.4rem 5rem 1.4rem 5rem;
+    margin-top: 5rem; }
+    .details__button:hover {
+      background-color: #fafafa;
+      color: #d23166; }
   .details__img {
     position: absolute;
     right: 0rem;
@@ -496,20 +584,37 @@ button {
     font-family: Roboto;
     color: rgba(21, 1, 1, 0.6);
     margin-bottom: 2.2rem; }
-    .details .description .button {
-      display: inline-block;
-      background-color: #d23166;
-      border-radius: 0.5rem;
-      border: 0.2rem solid #d23166;
-      font-family: Hind Madurai;
-      font-weight: bold;
-      font-size: 1.6rem;
-      color: #fafafa;
-      padding: 1.4rem 5rem 1.4rem 5rem;
-      margin-top: 5rem; }
-      .details .description .button:hover {
-        background-color: #fafafa;
-        color: #d23166; }
+
+@media screen and (max-width: 1024px) {
+  .details__title {
+    font-size: 5rem; }
+  .details__img {
+    right: 0; } }
+
+@media screen and (max-width: 768px) {
+  .details__content {
+    min-height: auto;
+    padding: 14rem 0 0;
+    text-align: center; }
+  .details__title {
+    font-size: 4rem;
+    margin: 0 0 3rem; }
+  .details .description {
+    max-width: 90vw; }
+  .details__img {
+    position: static;
+    max-width: 100%; } }
+
+@media screen and (max-width: 576px) {
+  .details__content {
+    min-height: auto;
+    padding: 14rem 0 0; }
+  .details__title {
+    font-size: 3rem;
+    margin: 0 0 3rem; }
+  .details__img {
+    position: static;
+    max-width: 100%; } }
 
 .menu {
   padding: 3.1rem 0;
