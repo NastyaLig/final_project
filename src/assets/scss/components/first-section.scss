@@ -116,7 +116,6 @@
 // 768px;
 @media screen and (max-width: $sm) {
     .first-section {
-
         &__content {
             min-height: auto;
             padding: 14rem 0 0;
@@ -130,7 +129,6 @@
 
         .description{
           max-width: 90vw;
-          // position: absolute;
         }
 
         &__link {

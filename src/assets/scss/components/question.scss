@@ -66,3 +66,41 @@
       }
     }
 }
+
+// 768px;
+@media screen and (max-width: $sm) {
+    .question {
+        form {
+            display: block;
+            text-align: center;
+            margin: auto;
+        }
+        &__field{
+            margin-bottom: 3rem;
+        }
+        button{
+            margin:auto;
+        }
+    }
+}
+
+//576px;
+
+@media screen and (max-width: $xs) {
+    .question {
+         form{
+            width: 90vw;
+        }
+
+        &__field{
+            width: 90vw;
+        }
+
+        input{
+            width: 80vw;
+        }
+        button{
+            margin:auto;
+        }
+    }
+}

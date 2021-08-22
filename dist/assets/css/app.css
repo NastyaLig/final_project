@@ -539,15 +539,15 @@ button {
 .details {
   background: rgba(242, 206, 218, 0.3);
   overflow: hidden;
-  max-height: 54.5rem;
   padding-top: 14rem;
-  padding-bottom: 13.7rem;
+  padding-bottom: 4.7rem;
   margin-top: 5rem; }
   .details .container {
     position: relative; }
   .details__content {
-    max-width: 44rem;
-    min-height: 72rem; }
+    display: flex; }
+  .details__info-wrap {
+    margin-right: 7.4rem; }
   .details__title {
     color: #0f0101;
     font-family: Hind Madurai;
@@ -574,41 +574,50 @@ button {
       background-color: #fafafa;
       color: #d23166; }
   .details__img {
-    position: absolute;
     right: 0rem;
     bottom: 35rem;
     max-width: 40vw; }
-  .details .description {
+  .details__description {
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-family: Roboto;
     color: rgba(21, 1, 1, 0.6);
-    margin-bottom: 2.2rem; }
+    margin-bottom: 2.2rem;
+    max-width: 44.2rem; }
 
 @media screen and (max-width: 1024px) {
   .details__title {
     font-size: 5rem; }
   .details__img {
-    right: 0; } }
-
-@media screen and (max-width: 768px) {
-  .details__content {
-    min-height: auto;
-    padding: 14rem 0 0;
-    text-align: center; }
-  .details__title {
-    font-size: 4rem;
-    margin: 0 0 3rem; }
-  .details .description {
-    max-width: 90vw; }
-  .details__img {
     position: static;
     max-width: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .details {
+    padding-top: 1rem; }
+    .details__content {
+      display: block; }
+    .details__info-wrap {
+      margin-right: 0rem; }
+    .details__content {
+      min-height: auto;
+      padding: 5rem 0 0;
+      text-align: center; }
+    .details__title {
+      font-size: 4rem;
+      margin: 0 0 3rem;
+      text-align: center;
+      max-width: 100vw; }
+    .details__description {
+      max-width: 90vw; }
+    .details__img {
+      position: static;
+      max-width: 100%; } }
 
 @media screen and (max-width: 576px) {
   .details__content {
     min-height: auto;
-    padding: 14rem 0 0; }
+    padding: 5rem 0 0; }
   .details__title {
     font-size: 3rem;
     margin: 0 0 3rem; }
@@ -880,8 +889,7 @@ button {
     font-size: 3rem;
     margin: 0 0 3rem; }
   .comments__img {
-    position: static;
-    max-width: 20vw; } }
+    position: static; } }
 
 .order {
   background: rgba(242, 206, 218, 0.3); }
@@ -919,6 +927,16 @@ button {
     font-size: 2.2rem;
     line-height: 2.6rem;
     color: #000000; }
+  .order__step-select {
+    display: flex;
+    padding: 0 0 1.5rem; }
+  .order__txt {
+    margin-left: 1rem; }
+  .order__step-add {
+    display: flex;
+    padding: 0 0 1.5rem; }
+  .order__step-order {
+    display: flex; }
   .order__social-img {
     padding-top: 4rem;
     display: flex;
@@ -927,6 +945,24 @@ button {
     align-items: center; }
     .order__social-img :first-child {
       padding-right: 2rem; }
+
+@media screen and (max-width: 768px) {
+  .order {
+    text-align: center; }
+    .order__phone-wrap {
+      display: none; }
+    .order__info-wrap {
+      margin: auto; }
+    .order__steps {
+      margin: auto; }
+    .order__social-img {
+      margin: auto; } }
+
+@media screen and (max-width: 768px) and (max-width: 576px) {
+  .order {
+    text-align: center; }
+    .order__social-img {
+      display: block; } }
 
 .question__wrap {
   margin-top: 19.1rem;
@@ -980,6 +1016,26 @@ button {
   .question button:hover {
     background-color: #fafafa;
     color: #d23166; }
+
+@media screen and (max-width: 768px) {
+  .question form {
+    display: block;
+    text-align: center;
+    margin: auto; }
+  .question__field {
+    margin-bottom: 3rem; }
+  .question button {
+    margin: auto; } }
+
+@media screen and (max-width: 576px) {
+  .question form {
+    width: 90vw; }
+  .question__field {
+    width: 90vw; }
+  .question input {
+    width: 80vw; }
+  .question button {
+    margin: auto; } }
 
 .footer__main {
   background-color: #0A0808;
