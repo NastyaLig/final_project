@@ -24,16 +24,10 @@
 }
 
 .nav_categ {
-  margin-right: 17.2rem;
-  display: inline-block;
-  font-size: 1.8rem;
-  line-height: 2.1rem;
-  color: #150101;
-  text-align: center;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  margin-bottom: 5rem;
+    font-size: 1.8rem;
+    color: #150101;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
 
   &.nav_categ a {
     padding: 0 2rem 0 2rem;
@@ -48,6 +42,17 @@
     border-bottom: solid 5px $c-secondary;
     opacity: 1;
   }
+
+  ul{
+    padding: 0;
+    margin: 0 auto;
+    height: 40px;
+    margin: 0 5vw;
+    }
+
+    li{
+    display: inline;
+    }
 }
 
 .products {
@@ -178,72 +183,72 @@
     }
 }
 
-// // 1024px;
-// @media screen and (max-width: $md) {
-//     .prod {
+// 1024px;
+@media screen and (max-width: $md) {
+    .prod {
 
-//         &__title {
-//             font-size: 5rem;
-//         }
+       &__wrap{
+        display: block;
+        max-width: 90rem;
+        margin: 1.5% 15%;
+       }
 
-//         &__img {
-//             right: 0;
-//         }
-//     }
-// }
+       &__img-wrap {
+        display: flex;
+        margin-bottom: 1rem;
+        align-items: center;
+        justify-content: center;
+        max-width: 100vw;
+        margin-right: 0;
+      }
+
+      &__info-wrap{
+        text-align: center;
+        max-width: 100%;
+        align-items: center;
+        padding: 1rem 0;
+      }
+
+      &__revers{
+        display: block;
+        max-width: 90rem;
+        margin: 3% 15%;
+      }
+
+      &__revers-img-wrap {
+        display: flex;
+        margin-bottom: 3rem;
+        align-items: center;
+        justify-content: center;
+        max-width: 100vw;
+        margin-left: 0;
+      }
+
+      &__info-wrap-revers{
+        text-align: center;
+        max-width: 100%;
+        align-items: center;
+      }
+    }
+    ul{
+        height: 100rem;
+      }
+}
 
 // 768px;
 @media screen and (max-width: $sm) {
-    .prod {
-        &__wrap {
-            min-height: auto;
-            padding: 14rem 0 0;
-            text-align: center;
-            display: block;
-        }
-
-        &__title {
-            font-size: 4rem;
-            margin: 0 0 3rem;
-        }
-
-        .description{
-          max-width: 60vw;
-        }
-
-        &__img {
-            position: static;
-            max-width: 90vw;
-        }
-    }
+  .prod__description-revert {
+    text-align: center;
+  }
+ 
 }
 
 //576px;
 
 @media screen and (max-width: $xs) {
     .prod {
-        &__wrap {
-            min-height: auto;
-            padding: 14rem 0 0;
-            text-align: center;
-            display: block;
-        }
-
-        &__revers{
-          min-height: auto;
-          padding: 10rem 0 0;
-          text-align: center;
-          display: block;
-        }
-
-        &__title {
-            font-size: 3rem;
-            margin: 0 0 3rem;
-        }
-
-        &__img {
-            position: static;
-            max-width: 90vw;
-        }
+     &__wrap{
+      padding: 5rem 0;
     }
+  }
 }
