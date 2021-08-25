@@ -345,9 +345,9 @@ button {
 @media screen and (max-width: 768px) {
   ul {
     display: none; }
-  nav a {
+  li a {
     content: "";
-    background: url("nav-icon.svg") no-repeat;
+    background-image: url("./assets/imgs/nav-icon.svg");
     width: 30px;
     height: 30px;
     display: inline-block;
@@ -908,6 +908,7 @@ button {
     font-size: 3rem;
     margin: 0 0 3rem; }
   .comments__img {
+    display: none;
     position: static;
     width: 100%; } }
 

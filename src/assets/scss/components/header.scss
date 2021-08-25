@@ -83,9 +83,9 @@
      ul{
          display: none;
      }
-     nav a{  
+     li a{  
         content:"";  
-        background: url('nav-icon.svg') no-repeat;  
+        background-image: url('./assets/imgs/nav-icon.svg');  
         width: 30px;  
         height: 30px;  
         display: inline-block;  
