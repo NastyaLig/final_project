@@ -1057,49 +1057,152 @@ button {
   .question button {
     margin: auto; } }
 
-.footer__main {
-  background-color: #0A0808;
-  display: flex;
-  justify-content: flex-start; }
-
-.footer__social {
-  padding-top: 7rem;
-  padding-left: 24.5rem;
-  padding-bottom: 11.4rem; }
-
-.footer__text {
-  padding-top: 1rem;
-  max-width: 20.7rem;
-  max-height: 4.7rem;
-  font-size: 1.2rem;
-  line-height: 1.7rem;
-  letter-spacing: 0.01em;
-  color: #FFFFFF;
-  opacity: 0.7; }
-
-.footer__soc {
-  padding-top: 2.5rem;
-  font-weight: 500;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  color: #FFFFFF; }
-
-.footer__icon {
-  padding-top: 0.8rem;
-  display: flex;
-  max-width: 9rem;
-  justify-content: space-between; }
-
-.footer__menu {
-  display: block;
-  margin-left: 3.7rem;
-  font-size: 1.2rem;
-  line-height: 1.4rem;
-  color: red; }
-  .footer__menu__menu a {
-    display: block;
-    opacity: 0.7; }
-  .footer__menu__menu a:hover {
+.footer {
+  background-color: #0A0808; }
+  .footer__main {
+    display: flex;
+    justify-content: space-between;
+    margin: 7rem;
+    align-items: center; }
+  .footer__text {
+    padding-top: 1rem;
+    max-width: 20.7rem;
+    max-height: 4.7rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 0.7); }
+  .footer__text:hover {
+    color: white; }
+  .footer__soc {
+    padding-top: 2.5rem;
+    font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.4rem;
-    color: #ffff; }
+    color: #FFFFFF; }
+  .footer__icon {
+    padding-top: 0.8rem;
+    display: flex;
+    max-width: 9rem;
+    justify-content: space-between; }
+  .footer__txt {
+    color: rgba(255, 255, 255, 0.7);
+    padding-top: 1rem;
+    max-width: 20.7rem;
+    max-height: 4.7rem;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    letter-spacing: 0.01em; }
+  .footer__title {
+    padding: 2.5rem 0 1.3rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.4rem;
+    color: #FFFFFF; }
+  .footer__icons {
+    padding-top: 0.8rem;
+    display: flex;
+    max-width: 9rem;
+    justify-content: space-between; }
+  .footer__icons * {
+    padding: 1.5rem 1.5rem 0 0; }
+  .footer form {
+    max-height: 5.5rem;
+    display: flex; }
+  .footer input {
+    width: 28rem;
+    height: 5.5rem;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-bottom: 1.5rem;
+    background: #0A0808;
+    border: 0.1rem solid #d23166;
+    border-radius: 5px;
+    z-index: 2; }
+  .footer__field {
+    width: 25rem;
+    height: 5.5rem; }
+    .footer__field::placeholder {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+      color: rgba(255, 255, 255, 0.6); }
+  .footer button {
+    display: block;
+    background-color: #d23166;
+    border-radius: 0.5rem;
+    border: 0.2rem solid #d23166;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #fafafa;
+    padding: 1.6rem 1.7rem;
+    max-width: 12.4rem;
+    max-height: 5.5rem;
+    z-index: 3; }
+    .footer button:hover {
+      background-color: #fafafa;
+      color: #d23166; }
+
+@media screen and (max-width: 1024px) {
+  .footer form {
+    display: block;
+    text-align: center;
+    margin: auto; }
+  .footer__field {
+    margin-bottom: 0.5rem; }
+  .footer button {
+    align-items: flex-start; }
+  .footer__icons {
+    padding-top: 6rem; }
+  .footer__txt {
+    max-width: 15rem; }
+  .footer__soc {
+    padding-top: 5rem; } }
+
+@media screen and (max-width: 768px) {
+  .footer__main {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; }
+  .footer__txt {
+    max-width: 80vw;
+    font-size: 3rem;
+    line-height: 4rem; }
+  .footer__soc {
+    display: block;
+    font-size: 3rem;
+    padding: 15rem 0 0 0;
+    line-height: 2rem; }
+  .footer__icon {
+    margin: 2rem auto;
+    display: flex; }
+  .footer__icon * {
+    padding: 0.5rem; }
+  .footer__two-wrap {
+    margin: 1.5rem auto; }
+  .footer__text {
+    font-size: 2.5rem;
+    line-height: 3rem; }
+  .footer__title {
+    font-size: 3rem;
+    padding: 4rem 0 2rem; }
+  .footer__icons {
+    margin: 1rem auto;
+    text-align: center; }
+  .footer button {
+    align-items: center;
+    margin: 1rem auto; } }
+
+@media screen and (max-width: 576px) {
+  .footer__txt {
+    max-width: 80vw;
+    font-size: 2.5rem;
+    line-height: 4rem; }
+  .footer__soc {
+    display: block;
+    font-size: 3rem;
+    padding: 12rem 0 0 0;
+    line-height: 2.5rem; }
+  .footer__icon {
+    margin: 2rem auto;
+    display: flex; } }
